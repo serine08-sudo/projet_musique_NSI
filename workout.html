@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotifeye</title>
+  <link rel="stylesheet" href="Playlist_style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Ma Playlist</h2>
+    <ul class="menu">
+      <button onclick="window.location.href='projet_musique_nsi.html'">Accueil</button>
+      <button onclick="window.location.href='Recherche.html'">Rechercher</button>
+    </ul>
+  </div>
+
+  <div class="main">
+    <header>
+      <h1>Workout</h1>
+    </header>
+
+   <div class="playlist">
+  <div class="track" onclick="playTrack('audio/ Jhené_Aiko_Bed_Peace_ft._Childish_Gambino.mp3')"> Bed Peace - Jhené Aiko </div>
+  <div class="track" onclick="playTrack('audio/... .mp3')"> ;;; </div>
+  <div class="track" onclick="playTrack('audio/... .mp3')"> ... </div>
+
+    <audio id="audioPlayer" controls style="width: 100%; margin-top: 20px;">
+      <source src="" type="audio/mp3">
+    </audio>
+  </div>
+
+  <script>
+    function playTrack(src) {
+      const player = document.getElementById('audioPlayer');
+      player.src = src;
+      player.play();
+    }
+  </script>
+</body>
+</html>

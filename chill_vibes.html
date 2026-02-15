@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotifeye</title>
+  <link rel="stylesheet" href="Playlist_style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Spotifeye</h2>
+    <ul class="menu">
+      <button onclick="window.location.href='projet_musique_nsi.html'">Accueil</button>
+      <button onclick="window.location.href='Recherche.html'">Rechercher</button>
+    </ul>
+  </div>
+
+  <div class="main">
+    <header>
+      <h1>Chill Vibes</h1>
+    </header>
+
+    <div class="playlist">
+      <figcaption>J'fais mes affaires - Djadja & Dinaz</figcaption>
+       <div class="track" onclick="playTrack('audio/Djadja_Dinaz_Jfais_mes_affaires.mp3', this)" data-title="J'fais mes affaires - Djadja & Dinaz">
+
+         <audio controls src="audio/Djadja_Dinaz_Jfais_mes_affaires.mp3"></audio>
+  <a href="audio/Djadja_Dinaz_Jfais_mes_affaires.mp3"></a>
+  </div>
+
+  <div class="playlist">
+    <figcaption>A&H- Leto</figcaption>
+       <div class="track" onclick="playTrack('audio/Leto - A_H.mp3', this)" data-title="A&H- Leto">
+
+         <audio controls src="/home/serine/Documents/nsi projet musique /audio/Leto - A_H.mp3"></audio>
+  <a href="/home/serine/Documents/nsi projet musique /audio/Leto - A_H.mp3"></a>
+  </div>
+
+  <div class="playlist">
+    <figcaption>RnBoi - Mon bébé</figcaption>
+       <div class="track" onclick="playTrack('audio/RnBoi - Mon bébé.mp3', this)" data-title="A&H- Leto">
+
+         <audio controls src="/home/serine/Documents/nsi projet musique /audio/RnBoi - Mon bébé.mp3"></audio>
+  <a href="/home/serine/Documents/nsi projet musique /audio/RnBoi - Mon bébé.mp3"></a>
+  </div>
+
+   <div class="playlist">
+    <figcaption>VEN1 - HAKAYET</figcaption>
+       <div class="track" onclick="playTrack('audio/VEN1 - HAKAYET.mp3', this)" data-title="VEN1 - HAKAYET">
+
+         <audio controls src="/home/serine/Documents/nsi projet musique /audio/RnBoi - Mon bébé.mp3"></audio>
+  <a href="/home/serine/Documents/nsi projet musique /audio/VEN1 - HAKAYET.mp3"></a>
+  </div>
+
+    <script>
+      function playTrack(src) {
+        const player = document.getElementById('audioPlayer');
+        player.src = src;
+        player.play();
+      }
+    </script>
+</body>
+</html>
