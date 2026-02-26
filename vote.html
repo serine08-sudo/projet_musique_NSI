@@ -2,35 +2,44 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8">
-  <title>Spotifeye</title>
-  <link rel="stylesheet" href="Playlist_style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotifeye - Vote</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="sidebar">
     <h2>Spotifeye</h2>
     <ul>
-       <button onclick="window.location.href='projet_musique_nsi.html'">Accueil</button>
-      <button onclick="window.location.href='Recherche.html'">Rechercher</button>
+      <li><button onclick="window.location.href='index.html'">Accueil</button></li>
+      <li><button onclick="window.location.href='recherche.html'">Rechercher</button></li>
     </ul>
   </div>
 
   <div class="main">
+    <header>
+      <h1>Votez pour les sons de votre choix</h1>
+    </header>
+
     <section class="playlist">
-      
+      <p>Il n'y a rien qui vous plait, ajoutez vos propres sons</p>
+      <br>
+      <div class="search-bar">
+        <input id="query" type="text" placeholder="Tape le nom d'une musique..." />
+        <button onclick="searchMusic()">Rechercher</button>
+      </div>
+
+      <!-- Les résultats de recherche apparaissent ici -->
+      <div id="resultats" class="cards"></div>
     </section>
   </div>
-	<h1>Votez pour les sons de votre choix </h1>
-
-	<p> Il n'y a rien qui vous plait, ajoutez vos propres sons 
-		<input id="query" type="text" placeholder="Tape le nom d'une musique..." style="width:300px; padding:8px;">
-<button onclick="searchYouTube()">Rechercher</button>
-
 
   <footer>
     <div class="player">
       <p>♪ Titre en cours - Artiste ♪</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
