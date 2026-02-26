@@ -44,7 +44,7 @@ function afficherResultats(musiques) {
       <div class="vote-section">
         <span id="count-${id}">${nbVotes} vote${nbVotes > 1 ? "s" : ""}</span>
         ${preview ? `<button class="btn-play" id="play-${id}" onclick="jouerMusique('${preview}', ${id})">▶ Ecouter</button>` : ""}
-        <button class="btn-vote" onclick="voter(${id}, '${musique.trackName}', '${musique.artistName}')">👍 Voter</button>
+        <button class="btn-vote" onclick="voter(${id}, '${musique.trackName}', '${musique.artistName}')"> Voter</button>
       </div>
     `;
     conteneur.appendChild(carte);
