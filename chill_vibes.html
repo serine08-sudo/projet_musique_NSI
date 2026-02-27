@@ -19,44 +19,47 @@
       <h1>Chill Vibes</h1>
     </header>
 
-    <div class="playlist">
-      <figcaption>J'fais mes affaires - Djadja & Dinaz</figcaption>
-       <div class="track" onclick="playTrack('audio/Djadja_Dinaz_Jfais_mes_affaires.mp3', this)" data-title="J'fais mes affaires - Djadja & Dinaz">
+    <div class="track-list">
+      <div class="track-item">
+        <div class="track-info">
+          <div class="title">I Like It</div>
+          <div class="artist">Stray Kids</div>
+        </div>
+        <audio controls src="I Like It.mp3"></audio>
+      </div>
 
-         <audio controls src="audio/Djadja_Dinaz_Jfais_mes_affaires.mp3"></audio>
-  <a href="audio/Djadja_Dinaz_Jfais_mes_affaires.mp3"></a>
+      <div class="track-item">
+        <div class="track-info">
+          <div class="title">LOCO</div>
+          <div class="artist">ITZY</div>
+        </div>
+        <audio controls src="LOCO.mp3"></audio>
+      </div>
+
+      <div class="track-item">
+        <div class="track-info">
+          <div class="title">Social Path</div>
+          <div class="artist">Stray Kids</div>
+        </div>
+        <audio controls src="Social Path (Feat. LiSA) (Korean Ver.).mp3"></audio>
+      </div>
+
+      <div class="track-item">
+        <div class="track-info">
+          <div class="title">WANNABE</div>
+          <div class="artist">ITZY</div>
+        </div>
+        <audio controls src="WANNABE.mp3"></audio>
+      </div>
+
+      <div class="track-item">
+        <div class="track-info">
+          <div class="title">S-Class</div>
+          <div class="artist">Stray Kids </div>
+        </div>
+        <audio controls src="S-Class.mp3"></audio>
+      </div>
+    </div>
   </div>
-
-  <div class="playlist">
-    <figcaption>A&H- Leto</figcaption>
-       <div class="track" onclick="playTrack('audio/Leto - A_H.mp3', this)" data-title="A&H- Leto">
-
-         <audio controls src="/home/serine/Documents/nsi projet musique /audio/Leto - A_H.mp3"></audio>
-  <a href="/home/serine/Documents/nsi projet musique /audio/Leto - A_H.mp3"></a>
-  </div>
-
-  <div class="playlist">
-    <figcaption>RnBoi - Mon bébé</figcaption>
-       <div class="track" onclick="playTrack('audio/RnBoi - Mon bébé.mp3', this)" data-title="A&H- Leto">
-
-         <audio controls src="/home/serine/Documents/nsi projet musique /audio/RnBoi - Mon bébé.mp3"></audio>
-  <a href="/home/serine/Documents/nsi projet musique /audio/RnBoi - Mon bébé.mp3"></a>
-  </div>
-
-   <div class="playlist">
-    <figcaption>VEN1 - HAKAYET</figcaption>
-       <div class="track" onclick="playTrack('audio/VEN1 - HAKAYET.mp3', this)" data-title="VEN1 - HAKAYET">
-
-         <audio controls src="/home/serine/Documents/nsi projet musique /audio/RnBoi - Mon bébé.mp3"></audio>
-  <a href="/home/serine/Documents/nsi projet musique /audio/VEN1 - HAKAYET.mp3"></a>
-  </div>
-
-    <script>
-      function playTrack(src) {
-        const player = document.getElementById('audioPlayer');
-        player.src = src;
-        player.play();
-      }
-    </script>
 </body>
 </html>

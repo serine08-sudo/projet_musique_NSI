@@ -129,8 +129,43 @@ header h1 {
   background-color: #167c3a;
   transform: scale(1.05);
 }
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
 
-/* CARTES MUSIQUE - affichage en liste verticale */
+.track-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #1DB954;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.track-info {
+  min-width: 200px;
+}
+
+.track-info .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.track-info .artist {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+audio {
+  flex: 1;
+  height: 40px;
+  width: 100%;
+}
+
+/* carte musique affichage liste verticale */
 
 #resultats {
   display: flex;
